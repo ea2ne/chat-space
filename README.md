@@ -8,21 +8,22 @@
 |name|string|null: false|
 |mail|string|null: false|
 |password|string|null: false|
-|pass-check|string|null: false|
+|pass_check|string|null: false|
 
 ### Association
 - has_many :groups, through:  :users_groups 
 - has_many :messages
-- has_many :images
+- has_many :users_groups 
 
 ## messagesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |id|integer|null: false|
-|message|string|null: false|
+|text|string|  |
 |image|image|  |
-|users_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
@@ -37,8 +38,10 @@
 
 ### Association
 - has_many :messages, through:  :users_groups 
+- has_many :users_groups
+- 
 
-## groups_usersテーブル
+## users_groupsテーブル
 
 |Column|Type|Options|
 |------|----|-------|

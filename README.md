@@ -5,48 +5,38 @@
 |Column|Type|Options|
 |------|----|-------|
 |id|integer|null: false|
-|user_name|string|null: false|
+|name|string|null: false|
 |mail|string|null: false|
 |password|string|null: false|
 |pass-check|string|null: false|
 
 ### Association
-- has_many :group-name, through: users_group 
-- has_many :message
-- has_many :image
+- has_many :groups, through:  :users_groups 
+- has_many :messages
+- has_many :images
 
 ## messagesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |id|integer|null: false|
-|message|string|null: false, foreign_key: true|
+|message|string|null: false|
+|image|image|  |
 |users_id|integer|null: false, foreign_key: true|
-|create-date|date|  |
 
 ### Association
 - belongs_to :user
+- belongs_to :group
 
-## groupテーブル
+## groupsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |id|integer|null: false|
-|group_name|string|null: false|
+|name|string|null: false|
 
 ### Association
-- has_many :message, through: users_group 
-
-## imagesテーブル
-
-|Column|Type|Options|
-|------|----|-------|
-|id|integer|null: false|
-|image|image|null: false|
-|users_id|integer|null: false, foreign_key: true|
-
-### Association 
-- belongs_to :user
+- has_many :messages, through:  :users_groups 
 
 ## groups_usersテーブル
 

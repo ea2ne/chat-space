@@ -8,5 +8,6 @@
 |group_id|integer|null: false, foreign_key: true|
 
 ### Association
+- has_many :groups, through: members 
 - belongs_to :group
 - belongs_to :user

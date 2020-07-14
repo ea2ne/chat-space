@@ -6,7 +6,8 @@
       .left-2
         <メンバー山口>
     .group-right
-      %a(href="https://prog-teacher.com/") <えでぃっと>
+      .edit
+        %a(class="edit-btn" href="https://prog-teacher.com/") Edit
   .message-list
     .name-time
       .name
@@ -22,5 +23,24 @@
         <ちょっと前>
     .message-text
       <吾輩だよ！名前はまだないけど。100万貸して！>
+    .name-time
+      .name
+        <のび>
+      .time
+        <けっこう前>
+    .message-text
+      <ネコえも〜ん！100万詐欺に遭ったよ〜！>
+    .name-time
+      .name
+        <ネコえもん>
+      .time
+        <すげ〜前>
+    .message-text
+      <どうしたんだい。またGにいじめられたのかい？>
   .message-form
-    <フォーム部分>
+    %form(action="#")
+      %input(class="input" type="text" name="name" placeholder="用件を聞こうか、、、")/
+      .icon-field
+        <i class="far fa-image"></i>
+      %input(class="submit" type="submit" name="btn" value="ベネ（良し）")/
+    

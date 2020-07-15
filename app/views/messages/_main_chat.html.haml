@@ -43,6 +43,7 @@
         %form( action="#")
         %input(class="input" type="text" name="name" placeholder="用件を聞こうか、、、")/
         %label{class: "input-box__image"}
-          =icon('fas', 'image')
-          %input{type: "file", class:"hidden"}
+        =icon('fas', 'image')
+        %input(class="Hidden" type="file" name="message[image]" id="message_image")
       %input(class="submit" type="submit" name="btn" value="ベネ（良し）")/
+    

@@ -13,13 +13,18 @@
       .name {
         height: 20px;
         width: 200px;
-        background-color: lightblue;
+        font-size: 16px;
+      }
+      .logo {
+        margin-right: 5px;
       }
         
       .icons {
         height: 20px;
         width: 60px;
-        background-color: aqua;
+        line-height: 20px;
+        color: #ffffff;
+        text-align: right;
       }
   }
   .group-list {

@@ -37,13 +37,10 @@
         <すげ〜前>
     .message-text
       <どうしたんだい。またGにいじめられたのかい？>
-  .footer
-    .form
-      .form_contents
-        %form( action="#")
-        %input(class="input" type="text" name="name" placeholder="用件を聞こうか、、、")/
-        %label{class: "input-box__image"}
-        =icon('fas', 'image')
-        %input(class="Hidden" type="file" name="message[image]" id="message_image")
+  .message-form
+    %form(action="#")
+      %input(class="input" type="text" name="name" placeholder="用件を聞こうか、、、")/
+      .icon-field
+        <i class="far fa-image"></i>
       %input(class="submit" type="submit" name="btn" value="ベネ（良し）")/
     

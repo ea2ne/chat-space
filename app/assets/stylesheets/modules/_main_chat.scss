@@ -59,49 +59,38 @@
         color: #434A54;
       }
     }
-    .footer {
+    .message-form {
       height: 90px;
-      padding: 20px 50px 20px 40px;
+      display: flex;
+      justify-content: space-around;
       align-items: center;
       background-color: #d2d2d2;
-
-      .form{
+      form{
         display: flex;
-        justify-content: space-around;
+        position: relative;
+        width: 100%;
+        padding-left: 50px;
       }
-        .form_contents {
-          width: 100%;
-          background-color: #fff;
-          display: flex;
-          justify-content: space-around;
-          position: relative;
+      .input {
+        height: 50px;
+        width: 100%;
+        line-height: 50px;
+        padding: 0 10px;
         }
-          .input {
-            height: 50px;
-            width: 100%;
-            line-height: 50px;
-            padding: 0 45px 0 15px;
-            border: none;
-          }
-          .fas {
-            height: 50px;
-            position: absolute;
-            line-height: 50px;
-            right: 10px;
-          }
-          .Hidden {
-            display: none;
-          }
+        .icon-field {
+          height: 50px;
+          width: 80px;
+          position: absolute;
+          left: 185px;
+          line-height: 50px;
         }
       }
       .submit {
         height: 50px;
-        margin: 0  0 0 15px;
-        page-break-after: 0 30px;
+        margin: 0  50px 0 40px;
         background-color: #38aef0;
         color: #fff;
         font-size: 16px;
-        border: none;
       }
-    
+    }
 

@@ -1,0 +1,48 @@
+.chat-main
+  .group-info
+    .group-left
+      .left-1
+        <メイン画面だよ！>
+      .left-2
+        <Member：山口メンバー>
+    .group-right
+      .edit
+        %a(class="edit-btn" href="https://prog-teacher.com/") Edit
+  .message-list
+    .name-time
+      .name
+        <俺様>
+      .time
+        <ついさっき>
+    .message-text
+      <俺だよ！オレオレ！100万貸して！>
+    .name-time
+      .name
+        <吾輩>
+      .time
+        <ちょっと前>
+    .message-text
+      <吾輩だよ！名前はまだないけど。100万貸して！>
+    .name-time
+      .name
+        <のび>
+      .time
+        <けっこう前>
+    .message-text
+      <ネコえも〜ん！100万詐欺に遭ったよ〜!>
+    .name-time
+      .name
+        <ネコえもん>
+      .time
+        <すげ〜前>
+    .message-text
+      <どうしたんだい。またGにいじめられたのかい？>
+  .footer
+    .form
+      .form_contents
+        %form( action="#")
+        %input(class="input" type="text" name="name" placeholder="type a message")/
+        %label{class: "input-box__image"}
+          =icon('fas', 'image')
+          %input{type: "file", class:"hidden"}
+      %input(class="submit" type="submit" name="btn" value="ベネ（良し）")/

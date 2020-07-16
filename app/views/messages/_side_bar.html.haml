@@ -1,10 +1,10 @@
 .side-bar
   .top-items
-    .name
-      <サイドバー>
-    .icons
-      <span class="logo"><i class='far fa-edit'></i></span>
-      <i class='fas fa-cog'></i>
+    %h3.name
+      = current_user.name
+    %ul.icons
+      %li<span class="logo"><i class='far fa-edit'></i></span>
+      %li<i class='fas fa-cog'></i>
   .group-list
     .tech-logo
       <すいかバー>

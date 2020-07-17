@@ -4,13 +4,16 @@
       = current_user.name
     %ul.icons
       %li.left__icon
-        = link_to '#' do
+        = link_to new_group_path  do
           = icon('fas', 'edit')
       %li.right__icon
         = link_to edit_user_path(current_user) do
           = icon('fas', 'cog')
   .group-list
-    .tech-logo
-      <すいかバー>
-    .side-text
-      <あずきバー>
+    - current_user.groups.each do |group|
+      .group
+        = link_to '#' do
+          .tech-logo
+            = group.name
+          .side-text
+            吾輩はメッセージである。メッセージはまだない。

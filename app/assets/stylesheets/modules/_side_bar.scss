@@ -41,17 +41,22 @@
   .group-list {
     background-color: #2f3e51;
     height: calc(100vh - 100px);
-    color: #fff;
     font-weight: bold;
     padding: 0 20px;
-      .tech-logo {
-        margin: 0px 20px 5px 0;
-        padding-top: 20px;
-        font-size: 16px;
-      }
-      .side-text {
-        font-size: 11px;
-        margin:0 20px 40px 0;
+      .group {
+        a {
+        color: #fff;
+        text-decoration: none;
+        }
+        .tech-logo {
+          margin: 0px 20px 5px 0;
+          padding-top: 20px;
+          font-size: 16px;
+        }
+        .side-text {
+          font-size: 11px;
+          margin:0 20px 40px 0;
+        }
       }
   }
 }

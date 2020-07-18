@@ -10,7 +10,9 @@
 
     .group-right
       .edit
-        %a(class="edit-btn" href="https://prog-teacher.com/") Edit
+        = link_to edit_group_path(@group) do
+          edit
+        -# %a{class:"edit-btn", href: "groups/#{@group.id}/edit"}
   .MessageField
     = render @messages
     .Message

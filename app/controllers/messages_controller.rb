@@ -9,10 +9,10 @@ class MessagesController < ApplicationController
   def create
     @message = @group.messages.new(message_params)
     if @message.save
-      redirect_to group_messages_path(@group), notice:  'メッセージ送れたっス！'
+      redirect_to group_messages_path(@group), notice: 'メッセージ送れたっス！'
     else
       @messages = @group.messages.includes(:user)
-      flashu.now[:alert] = 'メッセージ入れろよ、、、。'
+      flash.now[:alert] = 'メッセージ入れろよ、、、。'
       render :index
     end
   end

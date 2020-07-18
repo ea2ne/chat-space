@@ -70,37 +70,43 @@
       }
         .form_contents {
           width: 100%;
-          background-color: #fff;
           display: flex;
-          justify-content: space-around;
-          position: relative;
+          justify-content: left;
         }
-          .input {
+          .Form__inputContent {
             height: 50px;
-            width: 100%;
-            line-height: 50px;
-            padding: 0 45px 0 15px;
+            width: 80%;
             border: none;
+            padding: 0 45px 0 15px;
           }
-          .fas {
+          .Form__inputImage {
             height: 50px;
-            position: absolute;
-            line-height: 50px;
-            right: 10px;
+            width: 50px;
+            background-color: #fff;
+            border: none;
+            position: relative;
           }
-          .hidden {
-            display: none;
-          }
+            .Form__icon {
+              height: 50px;
+              position: absolute;
+              line-height: 50px;
+              right: 10px;
+              font-size: 25px;
+            }
+            .Hidden {
+              display: none;
+            }
+        .Form__submit {
+          height: 50px;
+          width: 100px;
+          margin: 0  0 0 15px;
+          page-break-after: 0 30px;
+          background-color: #38aef0;
+          color: #fff;
+          font-size: 16px;
+          border: none;
         }
       }
-      .submit {
-        height: 50px;
-        margin: 0  0 0 15px;
-        page-break-after: 0 30px;
-        background-color: #38aef0;
-        color: #fff;
-        font-size: 16px;
-        border: none;
-      }
-    
+    }
+
 

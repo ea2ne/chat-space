@@ -63,6 +63,6 @@ $(function(){
     .fail(function(){
       alert('なんか書けよ。それか画像ね。');
     })
-    console.log("お腹減った")
+    // console.log("お腹減った")
   });
 });

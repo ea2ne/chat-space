@@ -59,7 +59,9 @@ $(function(){
       $('form')[0].reset();
       $('.MessageField').animate({ scrollTop: $('.MessageField')[0].scrollHeight});
       $('.Form__submit').prop('disabled', false);
-
+    })
+    .fail(function(){
+      alert('なんか書けよ。それか画像ね。');
     })
     console.log("お腹減った")
   });

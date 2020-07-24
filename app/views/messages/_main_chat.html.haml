@@ -17,19 +17,13 @@
     = render @messages
     .Message
     .name-time
-      .name
-        <のび>
-      .time
-        <けっこう前>
-    .message-text
-      <ネコえも〜ん！100万詐欺に遭ったよ〜!>
-    .name-time
-      .name
-        <ネコえもん>
-      .time
-        <すげ〜前>
-    .message-text
-      <どうしたんだい。またGにいじめられたのかい？>
+    -#   .name
+    -#     <のび>
+    -#   .time
+    -#     <けっこう前>
+    -# .message-text
+    -#   <ネコえも〜ん！100万詐欺に遭ったよ〜!>
+      
   .footer
     = form_with model: [@group, @message], html: {class: "Form"}, local: true do |f|
       .form

@@ -1,6 +1,17 @@
 $(function() {
   $("#UserSearch__field").on("keyup", function() {
     let input = $("#UserSearch__field").val();
-    console.log("いいっスよ")
+    $.ajax({
+      type: "GET",
+      url: "/users",
+      data: { keyword: input },
+      dataType: "json"
+    })
+    .done(function(users) {
+      console.log ("いいっスよ");
+    })
+    .fail(function() {
+      console.log("だめっスよ");
+    });
   });
 });

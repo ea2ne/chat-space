@@ -12,17 +12,9 @@
       .edit
         = link_to edit_group_path(@group) do
           edit
-        -# %a{class:"edit-btn", href: "groups/#{@group.id}/edit"}
   .MessageField
     = render @messages
-    .Message
-    .name-time
-    -#   .name
-    -#     <のび>
-    -#   .time
-    -#     <けっこう前>
-    -# .message-text
-    -#   <ネコえも〜ん！100万詐欺に遭ったよ〜!>
+
       
   .footer
     = form_with model: [@group, @message], html: {class: "Form"}, local: true do |f|

@@ -88,7 +88,7 @@ $(function(){
       }
     })
     .fail(function() {
-      alert('error');
+      alert('errorあああ');
     });
   };
   setInterval(reloadMessages, 7000);

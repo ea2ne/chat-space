@@ -9,7 +9,11 @@ working_directory "#{app_path}/current"
 listen "#{app_path}/shared/tmp/sockets/unicorn.sock"
 pid "#{app_path}/shared/tmp/pids/unicorn.pid"
 stderr_path "#{app_path}/shared/log/unicorn.stderr.log"
-stdout_path "#{app_path}/shared/log/unicorn.stdout.log""
+stdout_path "#{app_path}/shared/log/unicorn.stdout.log"
+
+after_fork do |_server, _worker|
+  defined?(ActiveRecord::Base) && ActiveRecord::Base.establish_connection
+end
 
 #Railsアプリケーションの応答を待つ上限時間を設定
 timeout 60
@@ -40,6 +44,7 @@ before_fork do |server, worker|
       logger.error e
     end
   end
+end
 
 
 after_fork do |_server, _worker|

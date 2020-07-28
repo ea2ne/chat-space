@@ -1,4 +1,4 @@
-# ../が一つ増えている
+# ../が一つ増えているhttps://gyazo.com/985416f811a82718ae6bf01d71773614
 app_path = File.expand_path('../../../', __FILE__)
 
 worker_processes 1
@@ -40,7 +40,7 @@ before_fork do |server, worker|
       logger.error e
     end
   end
-end
+
 
 after_fork do |_server, _worker|
   defined?(ActiveRecord::Base) && ActiveRecord::Base.establish_connection
